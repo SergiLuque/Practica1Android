@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.vaio.practica1.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:text="Intent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btIntent" />
+
+        <Button
+            android:text="Shared Preferences"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btSharedPreferences"
+            android:onClick = "abrirSharedPreferences" />
+
+        <Button
+            android:text="SQLite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btSQLite" />
+
+        <Button
+            android:text="Fitxers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btFitxers"
+            android:onClick = "abrirFitxers" />
+
+        <Button
+            android:text="Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button7" />
+
+        <Button
+            android:text="Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button8" />
+
+        <Button
+            android:text="Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button9" />
+
+        <Button
+            android:text="Missatgeria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button10"
+            android:onClick = "abrirMissatgeria"/>
+
+    </LinearLayout>
+</RelativeLayout>

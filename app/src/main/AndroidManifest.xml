@@ -15,15 +15,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".Calculadora"/>
-
-
-        <activity android:name=".Ficheros"/>
-
-
-        <activity android:name=".SMS"/>
-
+        <activity android:name=".Calculadora" />
+        <activity android:name=".Ficheros" />
+        <activity android:name=".SMS" />
+        <activity android:name=".FicherosInterna" />
+        <activity android:name=".FicherosRaw"/>
 
     </application>
 

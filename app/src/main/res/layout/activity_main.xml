@@ -15,58 +15,67 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true">
+        android:layout_centerHorizontal="true"
+        android:weightSum="8">
 
         <Button
             android:text="Intent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/btIntent" />
+            android:id="@+id/btIntent"
+            android:layout_weight="1" />
 
         <Button
             android:text="Shared Preferences"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/btSharedPreferences"
-            android:onClick = "abrirSharedPreferences" />
+            android:onClick = "abrirSharedPreferences"
+            android:layout_weight="1" />
 
         <Button
             android:text="SQLite"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/btSQLite" />
+            android:id="@+id/btSQLite"
+            android:layout_weight="1" />
 
         <Button
             android:text="Fitxers"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/btFitxers"
-            android:onClick = "abrirFitxers" />
+            android:onClick = "abrirFitxers"
+            android:layout_weight="1" />
 
         <Button
             android:text="Button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/button7" />
+            android:id="@+id/button7"
+            android:layout_weight="1" />
 
         <Button
             android:text="Button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/button8" />
+            android:id="@+id/button8"
+            android:layout_weight="1" />
 
         <Button
             android:text="Button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/button9" />
+            android:id="@+id/button9"
+            android:layout_weight="1" />
 
         <Button
             android:text="Missatgeria"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/button10"
-            android:onClick = "abrirMissatgeria"/>
+            android:onClick = "abrirMissatgeria"
+            android:layout_weight="1" />
 
     </LinearLayout>
 </RelativeLayout>

@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
@@ -71,7 +72,11 @@ public class Ficheros extends AppCompatActivity {
                     fraw.close();
 
                     Log.i("Ficheros", "Fichero RAW leido!");
+                    /*Toast toast1 = Toast.makeText(getApplicationContext(),"Fichero RAW leido", Toast.LENGTH_SHORT);
+                    toast1.show();*/
                     Log.i("Ficheros", "Texto: " + linea);
+                    Toast toast2 = Toast.makeText(getApplicationContext(),linea, Toast.LENGTH_SHORT);
+                    toast2.show();
                 }
                 catch (Exception ex)
                 {

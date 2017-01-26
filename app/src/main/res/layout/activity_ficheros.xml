@@ -8,19 +8,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/bt_Interna"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        android:textSize="36sp" />
 
     <Button
         android:text="Memoria Externa"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/bt_Externa"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        android:textSize="36sp" />
 
     <Button
         android:text="Raw"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/bt_Raw"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        android:textSize="36sp" />
 </LinearLayout>

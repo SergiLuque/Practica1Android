@@ -32,6 +32,15 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void abrirIntent(View view){
+        // Hace algo cuando pulsemos el botón
+        Intent intent = new Intent(this, Intent1.class);
+        //EditText editText = (EditText) findViewById(R.id.edit_message);
+        //String message = editText.getText().toString();
+        //intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
+    }
+
     public void abrirSharedPreferences(View view){
         // Hace algo cuando pulsemos el botón
         Intent intent = new Intent(this, Calculadora.class);
@@ -58,6 +67,16 @@ public class MainActivity extends AppCompatActivity {
         //intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
     }
+
+    public void abrirBateria(View view){
+        // Hace algo cuando pulsemos el botón
+        Intent intent = new Intent(this, MyBatteryReceiver.class);
+        //EditText editText = (EditText) findViewById(R.id.edit_message);
+        //String message = editText.getText().toString();
+        //intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
+    }
+
 
 
 }

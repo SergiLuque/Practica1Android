@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class Calculadora extends AppCompatActivity {
@@ -90,7 +91,17 @@ public class Calculadora extends AppCompatActivity {
         tv.setText("");
     }
 
+    public void onClick_C(View miView)
+    {
+/*
+        TextView tv = (TextView) findViewById(R.id.textView) ;
+        String str = tv.getText().toString();
+        tv.setText(str.substring(0,1));*/
 
+        Toast.makeText(this, "No hace nada", Toast.LENGTH_SHORT).show();
+
+
+    }
 
     public void onClick_1(View miView)
     {

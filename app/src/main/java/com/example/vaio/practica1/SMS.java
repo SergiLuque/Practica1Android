@@ -50,7 +50,7 @@ public class SMS extends AppCompatActivity implements OnClickListener{
             btnSent = (Button) findViewById(R.id.btEnviar);
             btnSent.setOnClickListener(this);
 
-            etMensaje = (EditText) findViewById(R.id.etMenaje);
+            etMensaje = (EditText) findViewById(R.id.etMensaje);
             etMensaje.setOnClickListener(this);
 
 

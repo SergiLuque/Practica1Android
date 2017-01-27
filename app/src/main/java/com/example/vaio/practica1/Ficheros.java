@@ -37,6 +37,7 @@ public class Ficheros extends AppCompatActivity {
         btn_W_Interna.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0)
             {
+                //
                 try
                 {
                     OutputStreamWriter fout =

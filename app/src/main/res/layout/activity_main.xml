@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,74 +11,84 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.vaio.practica1.MainActivity">
 
-    <LinearLayout
-        android:orientation="vertical"
+    <ImageView
+        app:srcCompat="@drawable/nclogo"
+        android:id="@+id/imageView2"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="247dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"/>
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="266dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:weightSum="8">
+        android:layout_alignParentStart="true">
 
-        <Button
-            android:text="Intent"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/btIntent"
-            android:onClick = "abrirIntent"
-            android:layout_weight="1" />
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
 
-        <Button
-            android:text="Shared Preferences"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/btSharedPreferences"
-            android:onClick = "abrirSharedPreferences"
-            android:layout_weight="1" />
+            <Button
+                android:text="Intent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btIntent"
+                android:minHeight="69dp" />
 
-        <Button
-            android:text="SQLite"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/btSQLite"
-            android:layout_weight="1" />
+            <Button
+                android:text="Shared Preferences"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btSharedPreferences"
+                android:minHeight="69dp" />
 
-        <Button
-            android:text="Fitxers"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/btFitxers"
-            android:onClick = "abrirFitxers"
-            android:layout_weight="1" />
+            <Button
+                android:text="SQLite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btSQLite"
+                android:minHeight="69dp" />
 
-        <Button
-            android:text="Button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/button7"
-            android:layout_weight="1" />
+            <Button
+                android:text="Fitxers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btFitxers"
+                android:minHeight="69dp" />
 
-        <Button
-            android:text="Button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/button8"
-            android:layout_weight="1" />
+            <Button
+                android:text="Start Activity For Result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btStartActivityForResult"
+                android:minHeight="69dp"
+                android:onClick="abrirStartActivityForResult" />
 
-        <Button
-            android:text="Bateria"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/btBateria"
-            android:onClick = "abrirBeteria"
-            android:layout_weight="1" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btContentProvider"
+                android:text="Content Provider"
+                android:minHeight="69dp" />
 
-        <Button
-            android:text="Missatgeria"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/button10"
-            android:onClick = "abrirMissatgeria"
-            android:layout_weight="1" />
+            <Button
+                android:text="Broadcast Receiver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btBroadcastReceiver"
+                android:minHeight="69dp" />
 
-    </LinearLayout>
+            <Button
+                android:text="Missatgeria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btMissatgeria"
+                android:minHeight="69dp" />
+        </LinearLayout>
+    </ScrollView>
+
 </RelativeLayout>

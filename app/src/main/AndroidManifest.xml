@@ -22,17 +22,21 @@
         <activity android:name=".FicherosRaw" />
         <activity android:name=".Intent1" />
         <activity android:name=".Intent2" />
-        <activity android:name=".Bateria"></activity>
+        <activity android:name=".Bateria" />
 
         <receiver android:name=".MyBatteryReceiver">
             <intent-filter>
-                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
-                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
-                <action android:name="android.intent.action.ACTION_POWER_LOW"/>
-                <action android:name="android.intent.action.ACTION_POWER_OKAY"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_LOW" />
+                <action android:name="android.intent.action.ACTION_POWER_OKAY" />
             </intent-filter>
         </receiver>
 
+        <activity android:name=".StartActivityForResult" />
+        <activity android:name=".Omplir" />
+        <activity android:name=".BaseDatos" />
+        <activity android:name=".BaseDatos2"></activity>
     </application>
 
 </manifest>

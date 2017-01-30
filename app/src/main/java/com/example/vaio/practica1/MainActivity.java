@@ -77,6 +77,16 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void abrirStartActivityForResult (View view){
+        Intent intent = new Intent(this, StartActivityForResult.class);
+        //findViewById(R.id.btStartActivityForResult);
+        startActivity(intent);
+    }
 
+    public void abrirSQLite (View view){
+        Intent intent = new Intent(this, BaseDatos.class);
+        //findViewById(R.id.btStartActivityForResult);
+        startActivity(intent);
+    }
 
 }
